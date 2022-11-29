@@ -5,14 +5,18 @@ import { Routes } from "./routes";
 function App() {
   return (
     <Router>
-      <ul>
+      <ul className="nav">
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/new-record">New Record</Link>
+          <Link to="/new-record">Record</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
         </li>
       </ul>
+
       <Routes />
     </Router>
   );
