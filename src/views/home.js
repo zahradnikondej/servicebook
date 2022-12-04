@@ -1,10 +1,16 @@
+import { useState } from "react";
+
 import { Button } from "../components/Button";
-import { Image } from "../components/Image";
+import { Modal } from "../widgets/modal";
+
 function Home() {
+  const [modal, setModal] = useState(false);
+
   return (
     <div>
-      <Button to="/new-record" text="New record" />
-      <Image />
+      This is home!
+      <Button text="Add New Record" onClick={() => setModal(true)} />
+      {modal && <Modal onClose={() => setModal(false)} />}
     </div>
   );
 }

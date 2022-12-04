@@ -1,20 +1,5 @@
-import { Field } from "../components/Field";
-import { Button } from "./Button";
+import { Form as FinalForm } from "react-final-form";
 
-const Form = () => {
-  return (
-    <form>
-      <Field
-        placeholder="SPZ"
-        maxLenght="7"
-        style={{ textTransform: "uppercase" }}
-      />
-      <Field placeholder="DATE" type="date" />
-      <Field placeholder="Kilometers" type="number" />
-      <Field placeholder="Repair" />
-      <Button />
-    </form>
-  );
-};
-
-export { Form };
+function Form({ onSubmit, validate, render }) {
+  return <FinalForm onSubmit={onSubmit} validate={validate} render={render} />;
+}
