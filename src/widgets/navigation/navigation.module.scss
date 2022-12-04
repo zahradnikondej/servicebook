@@ -1,0 +1,11 @@
+@import "../../styles/colors.scss";
+
+.navigation {
+  padding: 8px;
+  background-color: $light-green;
+  min-height: 40px;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}

@@ -1,21 +1,28 @@
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 
 import { Routes } from "./routes";
+import { Navigation } from "./widgets/navigation";
 
 function App() {
+  const navItems = [
+    {
+      id: "dashboard",
+      to: "/",
+      text: "Dashboard",
+      icon: AiOutlineHome,
+    },
+    {
+      id: "about",
+      to: "/profile",
+      text: "My Profile",
+      icon: AiOutlineUser,
+    },
+  ];
+
   return (
     <Router>
-      <ul className="nav">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/new-record">Record</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
+      <Navigation items={navItems} />
 
       <Routes />
     </Router>

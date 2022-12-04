@@ -1,4 +1,4 @@
-@import "../../styles//colors.scss";
+@import "../../styles/colors.scss";
 
 .wrapper {
   position: absolute;
@@ -12,6 +12,7 @@
 }
 
 .modal {
+  z-index: 1;
   position: relative;
   border: 1px solid darken($white, 10);
   background-color: darken($white, 5);
