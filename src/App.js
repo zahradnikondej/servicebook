@@ -10,10 +10,12 @@ function App() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/new-record">Record</Link>
+          <Link to="/new-record">
+            New <br /> record
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/records">Records</Link>
         </li>
       </ul>
 

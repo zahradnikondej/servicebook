@@ -1,5 +1,6 @@
 import { Button } from "../components/Button";
 import { Image } from "../components/Image";
+
 function Home() {
   return (
     <div>
